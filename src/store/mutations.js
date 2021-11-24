@@ -10,5 +10,8 @@ export default {
   },
   setdata (state, data) {
     state[state.filed] = data
+  },
+  login(state){
+    state.login = 1
   }
 }

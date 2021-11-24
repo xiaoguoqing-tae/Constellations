@@ -28,7 +28,7 @@
     const state = store.state
     store.commit('setFiled', 'today')
 
-    router.push('/')
+    router.push('/Today')
     watch(() => router.currentRoute.value.name,(value)=>{
         store.commit('setFiled', value)
     })

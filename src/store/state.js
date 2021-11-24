@@ -6,5 +6,6 @@ export default {
   tomorrow: {},
   week: {},
   month: {},
-  year: {}
+  year: {},
+  login:0
 }

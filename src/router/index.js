@@ -1,11 +1,16 @@
 import {createRouter , createWebHashHistory} from 'vue-router'
-import TodayPage from '../pages/Today'
+import index from '../pages/index.vue'
 
 const routes = [
   {
     path: '/',
+    name: 'index',
+    component: index
+  },
+  {
+    path: '/today',
     name: 'today',
-    component: TodayPage
+    component: () => import('../pages/Today')
   },
   {
     path: '/tomorrow',
